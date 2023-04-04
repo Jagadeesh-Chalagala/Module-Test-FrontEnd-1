@@ -1,0 +1,290 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #1A1C19;
+}
+.container{
+    margin: 0 20px;
+    padding: 0 15px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid  #CDD6C2;
+    margin : 6px 0;
+    height: 60px;
+    padding: 2px;
+    border-radius: 50px;
+}
+.nav-left{
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    color: #CDD6C2;
+    border: 2px solid  #CDD6C2;
+    border-radius: 30px;
+    width: 150px;
+    height: 48px;
+    padding : 7px 20px;
+    margin: 0 2px;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #1A1C19;
+}
+
+.ms{
+    width: 350px;
+    background-color: #343124;
+    border: none;
+}
+.nav-right input{
+    height: 0;
+    width: 0;
+}
+.menu{
+    display: none;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.horizontal-line{
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+
+.cards{
+    padding: 20px;
+    border-radius: 30px;
+}
+.item-1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #E0D6C2;
+
+}
+.item-2{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-color: #8F8868;
+}
+.item-3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #976C54;
+}
+.item-4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: #B5A38D;
+}
+.item-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-1 .card-top span{
+    padding: 3px;
+    margin:0px 5px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+.item-2 .card-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.item-2 .card-top .card-top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.item-2 .card-top .card-top-left span{
+    width: 25%;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.item-3 .card-portrait{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.item-3 .card-portrait+p{
+    margin: 10px 0;
+}
+.balls{
+    display: flex;
+    align-items: center;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #3a0303;
+}
+
+
+.item-4 .card-top{
+    display: flex;
+    justify-content: space-between;
+}
+.item-4 .card-top span{
+    width: 25%;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 15px;
+}
+.item-1 img{
+    height:720px;
+    margin: 10px 0;;
+    border-radius: 30px;
+}
+.item-2 img {
+    width:100%;
+    height:300px;
+    border-radius: 30px;
+}
+.item-3 img {
+    width:100%;
+    height:300px;
+    border-radius: 30px;
+}
+
+.item-4 img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+.item-1 h1{
+    padding:10px;
+}
+div img{
+    width: 100%;
+    padding:10px;
+
+}
+
+
+.card-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:30px;
+}
+.domain{
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+}
+.domain .country{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.cards img{
+    transition: transform 0.3s;
+}
+
+.cards:hover img{
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:968px) {
+    .btn-1{
+        display:none;
+    }
+    .nav-left{
+        flex-grow: 1;
+    }
+    .nav-left .ms{
+        flex-grow: 1;
+    }
+    .menu{
+        display: flex;
+    }
+
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-radius: 2px solid red;
+        gap: 10px;
+        height: 100vh;
+    }
+    
+    .item-1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: #E0D6C2;
+        width: 100;
+    }
+    .item-2{
+    
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-color: #8F8868;
+    }
+    .item-3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: #976C54;
+    }
+    .item-4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-color: #B5A38D;
+    }
+}
+@media (max-width:752px) {
+    .main-container{
+        display: block;
+    }
+}
